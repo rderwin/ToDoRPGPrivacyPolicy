@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do RPG - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.3rem;
+            margin: 20px 0 10px 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f8f9ff;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .faq-answer {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .feature-list li:before {
+            content: "⚡";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-size: 1.2rem;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        .troubleshooting {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .troubleshooting h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .step {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .step:before {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #667eea;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .troubleshooting ol {
+            counter-reset: step-counter;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #1976d2;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎮 To Do RPG</h1>
+            <p>Support & Help Center</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>🚀 Getting Started</h2>
+                <p>Welcome to To Do RPG! Here's how to begin your productivity quest:</p>
+                <ul class="feature-list">
+                    <li>Add tasks to Must Do (10 XP), Should Do (20 XP), or Could Do (40 XP) categories</li>
+                    <li>Complete tasks by tapping on them to earn XP</li>
+                    <li>Build perfect day streaks for massive XP bonuses (up to 5x multiplier!)</li>
+                    <li>Track your progress in the Stats screen</li>
+                    <li>Use the calendar to view your productivity history</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>❓ Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I earn XP?</div>
+                    <div class="faq-answer">
+                        Complete tasks by tapping on them! Must Do tasks give 10 XP, Should Do tasks give 20 XP, and Could Do tasks give 40 XP. You can also adjust XP values using the +/- buttons on each task.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What are perfect day streaks?</div>
+                    <div class="faq-answer">
+                        A perfect day occurs when you complete all relevant tasks for that day. Streaks give you XP multipliers - the longer your streak, the more bonus XP you earn (up to 5x at 30+ days)!
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I customize what counts for perfect days?</div>
+                    <div class="faq-answer">
+                        Go to the Stats screen and scroll down to "Perfect Day Settings". You can choose whether Should Do and Could Do items count toward your perfect day streaks.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can I view tasks from previous days?</div>
+                    <div class="faq-answer">
+                        Yes! Use the calendar view to see your productivity history. Tap on any day to view tasks from that date, or use the date navigation arrows to browse through days.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I delete a task?</div>
+                    <div class="faq-answer">
+                        Tap the trash icon on the right side of any task to delete it. The trash icon appears when you tap on a task.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What happens to my data if I delete the app?</div>
+                    <div class="faq-answer">
+                        Your data is stored locally on your device. If you delete the app, all your progress, tasks, and statistics will be lost. We recommend backing up your device regularly.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>🔧 Troubleshooting</h2>
+                
+                <div class="troubleshooting">
+                    <h4>App crashes or won't open</h4>
+                    <ol>
+                        <li>Force close the app and restart it</li>
+                        <li>Restart your device</li>
+                        <li>Make sure you have the latest version of iOS</li>
+                        <li>Check if you have enough storage space available</li>
+                    </ol>
+                </div>
+                
+                <div class="troubleshooting">
+                    <h4>Tasks not saving or disappearing</h4>
+                    <ol>
+                        <li>Make sure you're connected to the internet</li>
+                        <li>Try adding a new task to see if the issue persists</li>
+                        <li>Restart the app</li>
+                        <li>Check if you have sufficient storage space</li>
+                    </ol>
+                </div>
+                
+                <div class="troubleshooting">
+                    <h4>XP calculations seem wrong</h4>
+                    <ol>
+                        <li>Check your Perfect Day Settings in the Stats screen</li>
+                        <li>Make sure you're completing tasks on the correct day</li>
+                        <li>Verify that your streak is being calculated correctly</li>
+                        <li>Try refreshing the app by going to another day and back</li>
+                    </ol>
+                </div>
+                
+                <div class="troubleshooting">
+                    <h4>Calendar not showing correct data</h4>
+                    <ol>
+                        <li>Pull down to refresh the calendar view</li>
+                        <li>Navigate to a different day and back</li>
+                        <li>Check if the date you're viewing has any tasks</li>
+                        <li>Restart the app if the issue persists</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>🎯 Tips & Tricks</h2>
+                <ul class="feature-list">
+                    <li>Use the <span class="highlight">collapse/expand</span> feature to focus on one priority at a time</li>
+                    <li>Check your <span class="highlight">Stats screen</span> regularly to track your progress and level up</li>
+                    <li>Build <span class="highlight">perfect day streaks</span> for maximum XP bonuses</li>
+                    <li>Use the <span class="highlight">calendar view</span> to see patterns in your productivity</li>
+                    <li>Adjust XP values for important tasks to make them more rewarding</li>
+                    <li>Set realistic daily goals to maintain your streak</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>📱 System Requirements</h2>
+                <ul class="feature-list">
+                    <li>iOS 17.0 or later</li>
+                    <li>iPhone, iPad, or iPod touch</li>
+                    <li>At least 50MB of available storage</li>
+                    <li>Internet connection recommended for best experience</li>
+                </ul>
+            </div>
+            
+            <div class="contact-info">
+                <h3>📧 Need More Help?</h3>
+                <p>If you can't find the answer you're looking for, we're here to help!</p>
+                <a href="mailto:akiratoriniku@todorpg.app">Contact Support</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
